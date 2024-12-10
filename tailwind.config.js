@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+import forms from '@tailwindcss/forms';
+
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	safelist: [
@@ -128,5 +130,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')]
+	plugins: [typography, forms]
 };
